@@ -1,2 +1,4 @@
-arezzo
+Arezzo
 ======
+
+#How to install

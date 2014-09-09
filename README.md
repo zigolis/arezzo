@@ -1,5 +1,4 @@
 #Arezzo Challenge
-======
 
 This is the source from Arezzo's challenge.
 

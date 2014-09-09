@@ -1,0 +1,14 @@
+{
+  "name": "arezzo",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "backbone": "1.x",
+    "underscore": "1.x",
+    "jquery": "2.x"
+  }
+}

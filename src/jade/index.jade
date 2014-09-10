@@ -4,10 +4,51 @@ html(lang="en")
     title Arezzo's Challenge
     link(type='text/css', rel='stylesheet', href='../css/arezzo.min.css')
   body
-    header
-        h1 Arezzo's Challenge
-    h2 Galeria XYZ
-    #gallery.container
-        p Just a simple text
-          strong and other text
-    script(type='text/javascript' src='../js/arezzo.min.js')
+    .doc
+        header
+            .container
+                h1.brand Arezzo
+                nav
+                    ul
+                        li: a(href='#') Home
+                        li: a(href='#') Sobre
+                        li: a(href='#') Empresa
+                        li: a(href='#') Contato
+
+        .container
+            h2 Galeria XYZ
+            p Pequena descrição da galeria...
+
+            #gallery
+                ul
+                    li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
+
+            ul
+                li: a(href='#') Anterior
+                li: a(href='#') 1
+                li: a(href='#') 2
+                li: a(href='#') 3
+                li: a(href='#') 4
+                li: a(href='#') 5
+                li: a(href='#') 6
+                li: a(href='#') 7
+                li: a(href='#') 8
+                li: a(href='#') 9
+                li: a(href='#') 10
+                li: a(href='#') Próximo
+
+        footer
+            .container
+                p Empresa XYZ - endereço xxxxx - 2014
+                p todos os direitos reservados
+
+        script(type='text/javascript' src='../js/arezzo.min.js')

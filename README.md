@@ -11,7 +11,11 @@ These are the basic requirements for your application:
 
 ## Installation
 
-Execute this line in your application's dir:
+First of all, clone this repository:
+
+	git clone git@github.com:zigolis/arezzo.git
+
+After that, execute this line in your application's directory:
 
     npm install
 
@@ -25,12 +29,14 @@ Execute this line to run your application:
 
     gulp build
 
-Also you can run the commands singly:
+Also, you can run the commands singly:
 
     gulp markup
     gulp styles
     gulp scripts
     gulp images
+    
+Obs. The source will be created on ```/public/```
 
 ## Running (Development)
 

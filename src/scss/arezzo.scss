@@ -1,16 +1,140 @@
-$color: red;
+@import 'Variables';
+@import 'Mixins';
 
 * {
-    margin: 0;
-    padding: 0;
+    @include transition(all 0.2s ease);
+}
+
+html, body {
+    height: 100%;
+}
+
+.doc {
+    min-height: 100%;
+    position: relative;
 }
 
 header {
     background: #f8f8f8;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    overflow: auto;
+    padding: 5px 0;
+
+    h1 {
+        float: left;
+        font: 100 60px $fontFamily;
+    }
+
+    nav {
+        float: right;
+        margin-top: 25px;
+    }
+
+    li {
+        border-left: 1px solid #ccc;
+        float: left;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+
+    a {
+        color: #666;
+        display: block;
+        font: 100 16px $fontFamily;
+        padding: 3px 10px;
+
+        &:hover {
+            color: #ccc;
+        }
+    }
 }
 
 .container {
     margin: 0 auto;
     width: 960px;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+.highlight {
+    color: #666;
+    font: 100 42px $fontFamily;
+}
+
+.introduction {
+    color: #999;
+    font: 100 20px $fontFamily;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    ul {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    a {
+        border: 2px solid #ccc;
+        display: block;
+
+        &:hover {
+            border-color: #eee;
+            opacity: .8;
+        }
+    }
+
+    img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.pagination {
+    display: table;
+    margin: 30px auto;
+
+    li {
+        border-left: 1px solid #ccc;
+        float: left;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+
+    a {
+        color: #666;
+        display: block;
+        font: 100 16px $fontFamily;
+        padding: 0 10px;
+
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+footer {
+    background: #f8f8f8;
+    clear: both;
+    height: 35px;
+    margin-top: -65px;
+    padding: 15px 0;
+    position: relative;
+
+    p {
+        color: #666;
+        font: 100 16px $fontFamily;
+        line-height: 22px;
+        text-align: center
+    }
 }

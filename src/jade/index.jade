@@ -3,6 +3,7 @@ html(lang="en")
   head
     title Arezzo's Challenge
     link(type='text/css', rel='stylesheet', href='../css/arezzo.min.css')
+    link(type='text/css', rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600')
   body
     .doc
         header
@@ -15,11 +16,11 @@ html(lang="en")
                         li: a(href='#') Empresa
                         li: a(href='#') Contato
 
-        .container
-            h2 Galeria XYZ
-            p Pequena descrição da galeria...
+        #main.container
+            h2.highlight Galeria XYZ
+            p.introduction Pequena descrição da galeria...
 
-            #gallery
+            .gallery
                 ul
                     li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
                     li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
@@ -32,7 +33,7 @@ html(lang="en")
                     li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
                     li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
 
-            ul
+            ul.pagination
                 li: a(href='#') Anterior
                 li: a(href='#') 1
                 li: a(href='#') 2
@@ -46,9 +47,9 @@ html(lang="en")
                 li: a(href='#') 10
                 li: a(href='#') Próximo
 
-        footer
-            .container
-                p Empresa XYZ - endereço xxxxx - 2014
-                p todos os direitos reservados
+    footer
+        .container
+            p Empresa XYZ - endereço xxxxx - 2014
+            p Todos os direitos reservados
 
         script(type='text/javascript' src='../js/arezzo.min.js')

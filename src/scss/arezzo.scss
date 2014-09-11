@@ -23,11 +23,20 @@ header {
     h1 {
         float: left;
         font: 100 60px $fontFamily;
+        margin-left: 10px
     }
 
     nav {
         float: right;
         margin-top: 25px;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 50px;
+        line-height: 0px;
+        margin-left: 10px;
+        padding-top: 23px;
     }
 
     li {
@@ -53,7 +62,7 @@ header {
 
 .container {
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
 }
 
 #main {
@@ -64,12 +73,14 @@ header {
 .highlight {
     color: #666;
     font: 100 42px $fontFamily;
+    margin-left: 10px;
 }
 
 .introduction {
     color: #999;
     font: 100 20px $fontFamily;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .gallery {

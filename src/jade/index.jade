@@ -10,6 +10,7 @@ html(lang="en")
             .container
                 h1.brand Arezzo
                 nav
+                    span.hamburger =
                     ul
                         li: a(href='#') Home
                         li: a(href='#') Sobre
@@ -22,16 +23,16 @@ html(lang="en")
 
             .gallery
                 ul
-                    li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/3.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/4.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/5.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/5.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/4.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/3.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/2.jpg' height='68' width='175')
-                    li: a(href='#'): img(src='../img/1.jpg' height='68' width='175')
+                    li: a(href='#'): img(src='../img/1.jpg' data-id='1' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2.jpg' data-id='2' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3.jpg' data-id='3' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4.jpg' data-id='4' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5.jpg' data-id='5' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5.jpg' data-id='5' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4.jpg' data-id='4' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3.jpg' data-id='3' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2.jpg' data-id='2' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/1.jpg' data-id='1' class='thumb' height='68' width='175')
 
             ul.pagination
                 li: a(href='#') Anterior
@@ -40,11 +41,11 @@ html(lang="en")
                 li: a(href='#') 3
                 li: a(href='#') 4
                 li: a(href='#') 5
-                li: a(href='#') 6
-                li: a(href='#') 7
-                li: a(href='#') 8
-                li: a(href='#') 9
-                li: a(href='#') 10
+                li.mob: a(href='#') 6
+                li.mob: a(href='#') 7
+                li.mob: a(href='#') 8
+                li.mob: a(href='#') 9
+                li.mob: a(href='#') 10
                 li: a(href='#') Próximo
 
     footer
@@ -57,4 +58,5 @@ html(lang="en")
         span.close X
         img(src='../img/1.jpg' width='520')
 
+    script(type='text/javascript' src='../vendor/jquery/dist/jquery.min.js')
     script(type='text/javascript' src='../js/arezzo.min.js')

@@ -13,7 +13,7 @@ var livereload = require('gulp-livereload');
 
 var paths = {
     markup:  ['src/jade/*.jade', '!build/html/*.html'],
-    styles:  ['src/scss/*.scss', 'src/scss/*.sass', '!build/css/*.scss'],
+    styles:  ['src/scss/ArezzoReset.scss','src/scss/arezzo.scss','src/scss/*.scss', 'src/scss/*.sass', '!build/css/*.scss'],
     scripts: ['src/coffeescript/*.coffee', '!build/js/*.coffee'],
     images:   'src/img/**/*'
 };

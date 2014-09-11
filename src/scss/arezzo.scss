@@ -40,12 +40,20 @@ header {
     }
 
     li {
-        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
         float: left;
 
         &:first-child {
             border-left: none;
         }
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    .web {
+        display: none;
     }
 
     a {
@@ -148,7 +156,7 @@ footer {
     }
 }
 
-.overlay {
+.bg, .overlay {
     background: #000;
     bottom: 0;
     left: 0;
@@ -156,6 +164,10 @@ footer {
     position: fixed;
     right: 0;
     top: 0;
+}
+
+.bg {
+    left: 100px;
 }
 
 .modal {

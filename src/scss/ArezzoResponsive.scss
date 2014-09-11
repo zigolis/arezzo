@@ -35,8 +35,12 @@
 
         li {
             border-bottom: 1px solid #f2f2f2;
-            border-left: none;
+            border-right: none;
             float: none;
+        }
+
+        .web {
+            display: block;
         }
 
         a {
@@ -93,5 +97,10 @@
     // This must be added on body and html
     .lock {
         overflow-x: hidden;
+    }
+
+    // This must be added on .overlay when menu is opened
+    .menu {
+        left: 100px;
     }
 }

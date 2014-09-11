@@ -19,7 +19,7 @@ $ ->
     showModal()
     return
 
-  showModal = (id) ->
+  showModal = ->
     $(".overlay").removeClass "hide"
     $(".modal").removeClass "hide"
     return

@@ -7,8 +7,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "backbone": "1.x",
-    "underscore": "1.x",
     "jquery": "2.x"
   }
 }

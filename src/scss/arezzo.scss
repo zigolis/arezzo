@@ -39,6 +39,10 @@ header {
         padding-top: 23px;
     }
 
+    ul {
+        display: block;
+    }
+
     li {
         border-right: 1px solid #ccc;
         float: left;
@@ -138,6 +142,28 @@ header {
             color: #ccc;
         }
     }
+
+    .prev, .next {
+        height: 12px;
+        margin-top: 3px;
+        width: 17px;
+
+        span {
+            visibility: hidden;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .prev {
+        background: url('../img/sprite.png') no-repeat 10px -26px;
+    }
+
+    .next {
+        background: url('../img/sprite.png') no-repeat 10px 1px;
+    }
 }
 
 footer {
@@ -156,7 +182,7 @@ footer {
     }
 }
 
-.bg, .overlay {
+.overlay {
     background: #000;
     bottom: 0;
     left: 0;
@@ -164,10 +190,6 @@ footer {
     position: fixed;
     right: 0;
     top: 0;
-}
-
-.bg {
-    left: 100px;
 }
 
 .modal {

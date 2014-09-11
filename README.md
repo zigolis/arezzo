@@ -46,6 +46,6 @@ Execute this line to run your application:
     
 And then execute:
 
-    gulp server
+    gulp serve
     
 Your app should be running on ```http://0.0.0.0:3000/html/```

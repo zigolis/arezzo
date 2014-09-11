@@ -24,19 +24,20 @@ html(lang="en")
 
             .gallery
                 ul
-                    li: a(href='#'): img(src='../img/1.jpg' data-id='1' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/2.jpg' data-id='2' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/3.jpg' data-id='3' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/4.jpg' data-id='4' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/5.jpg' data-id='5' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/5.jpg' data-id='5' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/4.jpg' data-id='4' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/3.jpg' data-id='3' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/2.jpg' data-id='2' class='thumb' height='68' width='175')
-                    li: a(href='#'): img(src='../img/1.jpg' data-id='1' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/1-thumb.jpg' data-id='1' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2-thumb.jpg' data-id='2' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3-thumb.jpg' data-id='3' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4-thumb.jpg' data-id='4' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5-thumb.jpg' data-id='5' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/5-thumb.jpg' data-id='5' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/4-thumb.jpg' data-id='4' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/3-thumb.jpg' data-id='3' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/2-thumb.jpg' data-id='2' class='thumb' height='68' width='175')
+                    li: a(href='#'): img(src='../img/1-thumb.jpg' data-id='1' class='thumb' height='68' width='175')
 
             ul.pagination
-                li: a(href='#') Anterior
+                li: a(href='#' class='prev')
+                    span Anterior
                 li: a(href='#') 1
                 li: a(href='#') 2
                 li: a(href='#') 3
@@ -47,7 +48,8 @@ html(lang="en")
                 li.mob: a(href='#') 8
                 li.mob: a(href='#') 9
                 li.mob: a(href='#') 10
-                li: a(href='#') Próximo
+                li: a(href='#' class='next')
+                    span Próximo
 
     footer
         .container

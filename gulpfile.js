@@ -66,3 +66,4 @@ gulp.task('watch', function() {
 
 gulp.task('serve', serve('build'));
 gulp.task('default', ['watch']);
+gulp.task('build', ['markup', 'styles', 'scripts', 'images']);

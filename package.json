@@ -13,8 +13,6 @@
     "jade",
     "sass",
     "coffeescript",
-    "underscore",
-    "backbone",
     "jquery",
     "node",
     "npm",

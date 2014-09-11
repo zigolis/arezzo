@@ -2,15 +2,13 @@ $ ->
   $(".hamburger").click (e) ->
     toggleDoc()
     toggleLock()
-    toggleOverlay()
-    showMenu()
+    toggleMenu()
     e.preventDefault()
     return
 
-  $(".nav a").on "click", (e) ->
+  $(".nav .web").click (e) ->
     toggleDoc()
     toggleLock()
-    toggleOverlay()
     hideMenu()
     e.preventDefault()
     return
@@ -24,11 +22,11 @@ $ ->
     return
 
   toggleOverlay = ->
-    $(".bg").toggleClass "hide"
+    $(".bg").toggle()
     return
 
-  showMenu = ->
-    $(".nav").show()
+  toggleMenu = ->
+    $(".nav").toggle()
     return
 
   hideMenu = ->
